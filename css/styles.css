@@ -125,51 +125,31 @@ img {
   margin-left: auto;
 }
 .header-contacts {
-  padding-top: 32px;
-  padding-bottom: 32px;
-
+display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
+.contacts-icon{
+  display: inline-block;
+  content: "";
+  margin-right: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  outline: 1px solid #ffffff;
+}
 .header-contacts:hover,
 .header-contacts:focus {
   color: var(--accent-color);
 }
-.contacts-icon-envelope{
-    display: inline-block;
-  content: "";
-  margin-right: 10px;
-  width: 16px;
-  height: 12px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-  outline: 1px solid #ffffff;
- 
-}
-.contacts-icon-envelope:hover{
-  fill: var(--accent-color);
-}
 
-.contacts-icon-vektor{
-  display: inline-block;
-  content: "";
-  margin-right: 10px;
-  width: 10px;
-  height: 16px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-  outline: 1px solid #ffffff;
-}
-.contacts-icon-vektor:hover{
-  fill: var(--accent-color);
-}
 /*----------Герой-----------*/
 .hero {
   background-color: var(--sec-bcg-color);
