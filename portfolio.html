@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-markup-hw-01</title>
+    <title>goit-markup-hw-02</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -19,24 +19,25 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!--Шапка -->
+    <!-- Шапка  -->
     <header class="header">
       <div class="conteiner box">
-        <a href="/" class="header-logo link"
-          ><span class="logo-text">Web</span>Studio</a
-        >
-
+        <div class="logo">
+          <a href="./index.html" class="header-logo link"
+            ><span class="logo-text">Web</span>Studio</a
+          >
+        </div>
         <nav>
           <ul class="header-list list box">
             <li class="header-item">
-              <a href="" class="header-link link current">Студія</a>
+              <a href="./index.html" class="header-link link">Студія</a>
             </li>
             <li class="header-item">
               <a
-                href="./portfolio.html"
+                href="/"
                 target="_self"
                 rel="norefferer noopener nofollow"
-                class="header-link link"
+                class="header-link link current"
                 >Портфоліо</a
               >
             </li>
@@ -46,26 +47,28 @@
           </ul>
         </nav>
 
-        <!-- Шапка  contacts -->
+        <!-- Шапка contacts -->
 
         <ul class="contacts-list list box">
           <li class="contacts-item">
-            <svg class="contacts-icon-envelope">
-              <use
-                href="./images/icons.svg/symbol-defs-icon.svg#envelope"
-              ></use>
-            </svg>
-            <a
-              href="mailto:info@devstudio.com"
-              class="header-contacts icon-envelope link"
-              >info@devstudio.com</a
+            <a href="mailto:info@devstudio.com" class="header-contacts link"
+              ><svg class="contacts-icon" width="16" height="12">
+                <use
+                  href="./images/icons.svg/symbol-defs-icon.svg#envelope"
+                ></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
           <li class="contacts-item">
-            <svg class="contacts-icon-vektor">
-              <use href="./images/icons.svg/symbol-defs-icon.svg#vector"></use>
-            </svg>
-            <a href="tel:+380961111111" class="header-contacts icon-vector link"
+            <a
+              href="tel:+380961111111"
+              class="header-contacts icon-vector link"
+            >
+              <svg class="contacts-icon" width="10" height="16">
+                <use
+                  href="./images/icons.svg/symbol-defs-icon.svg#vector"
+                ></use></svg
               >+38 096 111 11 11
             </a>
           </li>
@@ -74,325 +77,156 @@
     </header>
     <!-- main -->
     <main>
-      <!-- Герой -->
-      <section class="hero overlay">
+      <!-- Examples -->
+      <section class="portfolio section">
         <div class="conteiner">
-          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" data-modal-open class="hero-button">
-            Замовити послугу
-          </button>
-        </div>
-      </section>
-      <!-- Преимущетва -->
-      <section class="benefits section pb-none">
-        <div class="conteiner">
-          <h2 class="benefits-title visually-hidden">Особливості</h2>
-          <ul class="benefits-list list">
-            <li class="benefits-item">
-              <svg class="benefits-icon" width="270" height="120">
-                <use
-                  href="./images/icons.svg/symbol-defs-icon.svg#antenna"
-                ></use>
-              </svg>
-              <h3 class="benefits-subtitle">Увага до деталей</h3>
-              <p class="benefits-text">
-                Ідейні міркування, а також початок щоденної роботи по формуванню
-                позиції
-              </p>
+          <h1 class="works-title visually-hidden">Зразки наших робіт</h1>
+          <ul class="portfolio-buttons list">
+            <li class="portfolio-btn-item">
+              <button type="button" class="portfolio-btn">Всі</button>
             </li>
-            <li class="benefits-item">
-              <svg class="benefits-icon" width="270" height="120">
-                <use href="./images/icons.svg/symbol-defs-icon.svg#clock"></use>
-              </svg>
-              <h3 class="benefits-subtitle">Пунктуальність</h3>
-              <p class="benefits-text">
-                Завдання організації, особливо рамки і місце навчання кадрів
-                тягне у себе.
-              </p>
+            <li class="portfolio-btn-item">
+              <button type="button" class="portfolio-btn">Веб-сайти</button>
             </li>
-            <li class="benefits-item">
-              <svg class="benefits-icon" width="270" height="120">
-                <use
-                  href="./images/icons.svg/symbol-defs-icon.svg#diagram"
-                ></use>
-              </svg>
-              <h3 class="benefits-subtitle">Планування</h3>
-              <p class="benefits-text">
-                Так само консультація з широким активом значною мірою зумовлює.
-              </p>
+            <li class="portfolio-btn-item">
+              <button type="button" class="portfolio-btn">Додатки</button>
             </li>
-            <li class="benefits-item">
-              <svg class="benefits-icon" width="270" height="120">
-                <use
-                  href="./images/icons.svg/symbol-defs-icon.svg#astronaut"
-                ></use>
-              </svg>
-              <h3 class="benefits-subtitle">Сучасні технології</h3>
-              <p class="benefits-text">
-                Значимість цих проблем настільки очевидна, що реалізація
-                планових завдань.
-              </p>
+            <li class="portfolio-btn-item">
+              <button type="button" class="portfolio-btn">Дизайн</button>
+            </li>
+            <li class="portfolio-btn-item">
+              <button type="button" class="portfolio-btn">Маркетинг</button>
             </li>
           </ul>
-        </div>
-      </section>
-      <!-- Примеры работ  -->
-      <section class="examples section">
-        <div class="conteiner">
-          <h2 class="examples-title title">Чим ми займаємося</h2>
-          <ul class="examples-list list">
-            <li class="examples-item">
-              <img src="./images/box1.jpg" alt="Кодування" width="370" />
+
+          <ul class="portfolio-list list">
+            <li class="portfolio-item">
+              <a class="portfolio-item-link link" href="">
+                <img
+                  src="./images/port1.jpg"
+                  alt="displaying the site on laptop"
+                  width="370"
+                  height="294"
+                />
+                <div class="portfilio-conteiner">
+                  <h2 class="portfolio-subtitle">Технокач</h2>
+                  <p class="portfolio-text">Веб-сайт</p>
+                </div>
+              </a>
             </li>
-            <li class="examples-item">
-              <img src="./images/box2.jpg" alt="Оптимізація" width="370" />
+            <li class="portfolio-item">
+              <a class="portfolio-item-link link" href="">
+                <img
+                  src="./images/port2.jpg"
+                  alt="basketball players"
+                  width="370"
+                  height="294"
+                />
+                <div class="portfilio-conteiner">
+                  <h2 class="portfolio-subtitle">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="portfolio-text">Дизайн</p>
+                </div>
+              </a>
             </li>
-            <li class="examples-item">
-              <img src="./images/box3.jpg" alt="дизайн" width="370" />
+            <li class="portfolio-item">
+              <a class="portfolio-item-link link" href="">
+                <img
+                  src="./images/port3.jpg"
+                  alt="restaurant logo"
+                  width="370"
+                  height="294"
+                />
+                <div class="portfilio-conteiner">
+                  <h2 class="portfolio-subtitle">Ресторан Seafood</h2>
+                  <p class="portfolio-text">Додаток</p>
+                </div>
+              </a>
             </li>
-          </ul>
-        </div>
-      </section>
-      <!-- Наша команда  -->
-      <section class="team section">
-        <div class="conteiner">
-          <h2 class="team-title title">Наша команда</h2>
-          <ul class="team-list list">
-            <li class="team-item">
-              <img src="./images/img1.jpg" alt="Ігор Дем'яненко" width="270" />
-              <div class="team-padding">
-                <h3 class="team-name">Ігор Дем'яненко</h3>
-                <p class="team-text">Product Designer</p>
-                <ul class="team-conteiner-icon list">
-                  <li class="team-item-icon">
-                    <a href="" class="team-link-icon link">
-                      <svg class="team-icon" width="20" height="20">
-                        <use
-                          href="./images/icons.svg/symbol-defs-icon.svg#instagram"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="team-item-icon">
-                    <a href="" class="team-link-icon link">
-                      <svg class="team-icon" width="20" height="20">
-                        <use
-                          href="./images/icons.svg/symbol-defs-icon.svg#twitter"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="team-item-icon">
-                    <a href="" class="team-link-icon link">
-                      <svg class="team-icon" width="20" height="20">
-                        <use
-                          href="./images/icons.svg/symbol-defs-icon.svg#facebook"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="team-item-icon">
-                    <a href="" class="team-link-icon link">
-                      <svg class="team-icon" width="20" height="20">
-                        <use
-                          href="./images/icons.svg/symbol-defs-icon.svg#linkedin"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+            <li class="portfolio-item">
+              <a class="portfolio-item-link link" href="">
+                <img
+                  src="./images/port4.jpg"
+                  alt="headearphones"
+                  width="370"
+                  height="294"
+                />
+                <div class="portfilio-conteiner">
+                  <h2 class="portfolio-subtitle">Проєкт Prime</h2>
+                  <p class="portfolio-text">Маркетинг</p>
+                </div>
+              </a>
             </li>
-            <li class="team-item">
-              <img src="./images/img2.jpg" alt="Ольга Репіна" width="270" />
-              <div class="team-padding">
-                <h3 class="team-name">Ольга Репіна</h3>
-                <p class="team-text">Frontend Developer</p>
-                <ul class="team-conteiner-icon list">
-                  <li class="team-item-icon">
-                    <a href="" class="team-link-icon link">
-                      <svg class="team-icon" width="20" height="20">
-                        <use
-                          href="./images/icons.svg/symbol-defs-icon.svg#instagram"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="team-item-icon">
-                    <a href="" class="team-link-icon link">
-                      <svg class="team-icon" width="20" height="20">
-                        <use
-                          href="./images/icons.svg/symbol-defs-icon.svg#twitter"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="team-item-icon">
-                    <a href="" class="team-link-icon link">
-                      <svg class="team-icon" width="20" height="20">
-                        <use
-                          href="./images/icons.svg/symbol-defs-icon.svg#facebook"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="team-item-icon">
-                    <a href="" class="team-link-icon link">
-                      <svg class="team-icon" width="20" height="20">
-                        <use
-                          href="./images/icons.svg/symbol-defs-icon.svg#linkedin"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+            <li class="portfolio-item">
+              <a class="portfolio-item-link link" href="">
+                <img
+                  src="./images/port5.jpg"
+                  alt="boxes"
+                  width="370"
+                  height="294"
+                />
+                <div class="portfilio-conteiner">
+                  <h2 class="portfolio-subtitle">Проєкт Boxes</h2>
+                  <p class="portfolio-text">Додаток</p>
+                </div>
+              </a>
             </li>
-            <li class="team-item">
-              <img src="./images/img3.jpg" alt="Микола Тарасов" width="270" />
-              <div class="team-padding">
-                <h3 class="team-name">Микола Тарасов</h3>
-                <p class="team-text">Marketing</p>
-                <ul class="team-conteiner-icon list">
-                  <li class="team-item-icon">
-                    <a href="" class="team-link-icon link">
-                      <svg class="team-icon" width="20" height="20">
-                        <use
-                          href="./images/icons.svg/symbol-defs-icon.svg#instagram"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="team-item-icon">
-                    <a href="" class="team-link-icon link">
-                      <svg class="team-icon" width="20" height="20">
-                        <use
-                          href="./images/icons.svg/symbol-defs-icon.svg#twitter"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="team-item-icon">
-                    <a href="" class="team-link-icon link">
-                      <svg class="team-icon" width="20" height="20">
-                        <use
-                          href="./images/icons.svg/symbol-defs-icon.svg#facebook"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="team-item-icon">
-                    <a href="" class="team-link-icon link">
-                      <svg class="team-icon" width="20" height="20">
-                        <use
-                          href="./images/icons.svg/symbol-defs-icon.svg#linkedin"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+            <li class="portfolio-item">
+              <a class="portfolio-item-link link" href=""
+                ><img
+                  src="./images/port6.jpg"
+                  alt="displaying the site on monitor"
+                  width="370"
+                  height="294"
+                />
+                <div class="portfilio-conteiner">
+                  <h2 class="portfolio-subtitle">Inspiration has no Borders</h2>
+                  <p class="portfolio-text">Веб-сайт</p>
+                </div>
+              </a>
             </li>
-            <li class="team-item">
-              <img src="./images/img4.jpg" alt="Михайло Єрмаков" width="270" />
-              <div class="team-padding">
-                <h3 class="team-name">Михайло Єрмаков</h3>
-                <p class="team-text">UI Designer</p>
-                <ul class="team-conteiner-icon list">
-                  <li class="team-item-icon">
-                    <a href="" class="team-link-icon link">
-                      <svg class="team-icon" width="20" height="20">
-                        <use
-                          href="./images/icons.svg/symbol-defs-icon.svg#instagram"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="team-item-icon">
-                    <a href="" class="team-link-icon link">
-                      <svg class="team-icon" width="20" height="20">
-                        <use
-                          href="./images/icons.svg/symbol-defs-icon.svg#twitter"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="team-item-icon">
-                    <a href="" class="team-link-icon link">
-                      <svg class="team-icon" width="20" height="20">
-                        <use
-                          href="./images/icons.svg/symbol-defs-icon.svg#facebook"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="team-item-icon">
-                    <a href="" class="team-link-icon link">
-                      <svg class="team-icon" width="20" height="20">
-                        <use
-                          href="./images/icons.svg/symbol-defs-icon.svg#linkedin"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+            <li class="portfolio-item">
+              <a class="portfolio-item-link link" href="">
+                <img
+                  src="./images/port7.jpg"
+                  alt="open book"
+                  width="370"
+                  height="294"
+                />
+                <div class="portfilio-conteiner">
+                  <h2 class="portfolio-subtitle">Видання Limited Edition</h2>
+                  <p class="portfolio-text">Дизайн</p>
+                </div>
+              </a>
             </li>
-          </ul>
-        </div>
-      </section>
-      <!-- Клиенты -->
-      <section class="client section">
-        <div class="coteiner">
-          <h2 class="client-title">Постоянные клиенты</h2>
-          <ul class="client-list list">
-            <li class="client-item">
-              <a href="./" class="client-link-icon"
-                ><svg class="client-icon" width="41" height="46">
-                  <use
-                    href="./images/icons.svg/symbol-defs-icon.svg#union"
-                  ></use></svg
-              ></a>
+            <li class="portfolio-item">
+              <a class="portfolio-item-link link" href="">
+                <img
+                  src="./images/port8.jpg"
+                  alt="bage with name of company"
+                  width="370"
+                  height="294"
+                />
+                <div class="portfilio-conteiner">
+                  <h2 class="portfolio-subtitle">Проєкт LAB</h2>
+                  <p class="portfolio-text">Маркетинг</p>
+                </div>
+              </a>
             </li>
-            <li class="client-item">
-              <a href="./" class="client-link-icon"
-                ><svg class="client-icon" width="40" height="52">
-                  <use
-                    href="./images/icons.svg/symbol-defs-icon.svg#group"
-                  ></use></svg
-              ></a>
-            </li>
-            <li class="client-item">
-              <a href="./" class="client-link-icon"
-                ><svg class="client-icon" width="43" height="41">
-                  <use
-                    href="./images/icons.svg/symbol-defs-icon.svg#group1"
-                  ></use></svg
-              ></a>
-            </li>
-            <li class="client-item">
-              <a href="./" class="client-link-icon"
-                ><svg class="client-icon" width="84" height="40">
-                  <use
-                    href="./images/icons.svg/symbol-defs-icon.svg#group2"
-                  ></use></svg
-              ></a>
-            </li>
-            <li class="client-item">
-              <a href="./" class="client-link-icon"
-                ><svg class="client-icon" width="62" height="45">
-                  <use
-                    href="./images/icons.svg/symbol-defs-icon.svg#group3"
-                  ></use></svg
-              ></a>
-            </li>
-            <li class="client-item">
-              <a href="./" class="client-link-icon"
-                ><svg class="client-icon" width="93" height="43">
-                  <use
-                    href="./images/icons.svg/symbol-defs-icon.svg#group4"
-                  ></use></svg
-              ></a>
+            <li class="portfolio-item">
+              <a class="portfolio-item-link link" href="">
+                <img
+                  src="./images/port9.jpg"
+                  alt="man typing on laptop"
+                  width="370"
+                  height="294"
+                />
+                <div class="portfilio-conteiner">
+                  <h2 class="portfolio-subtitle">Growing Business</h2>
+                  <p class="portfolio-text">Додаток</p>
+                </div>
+              </a>
             </li>
           </ul>
         </div>

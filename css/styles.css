@@ -134,42 +134,27 @@ img {
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
+
+.header-contacts{
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.contacts-icon{
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 .header-contacts:hover,
 .header-contacts:focus {
   color: var(--accent-color);
 }
-.contacts-icon-envelope{
-    display: inline-block;
-  content: "";
-  margin-right: 10px;
-  width: 16px;
-  height: 12px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-  outline: 1px solid #ffffff;
- 
-}
-.contacts-icon-envelope:hover{
-  fill: var(--accent-color);
-}
 
-.contacts-icon-vektor{
-  display: inline-block;
-  content: "";
-  margin-right: 10px;
-  width: 10px;
-  height: 16px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-  outline: 1px solid #ffffff;
-}
-.contacts-icon-vektor:hover{
-  fill: var(--accent-color);
-}
 /*----------Герой-----------*/
 .hero {
   background-color: var(--sec-bcg-color);
@@ -270,22 +255,6 @@ img {
 }
 
 
-
-
-
-
-
-
-  display: inline-block;
-  content: "";
-  margin-right: 10px;
-  width: 16px;
-  height: 12px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-  outline: 1px solid #ffffff;
 /*----------Преимущетва -----------*/
 .pb-none {
   padding-bottom: 0;
@@ -388,12 +357,12 @@ justify-content: center;
 gap: 10px;
 }
 .team-link-icon {
-width: 44px;
-height: 44px;
-border-radius: 50%;
 display: flex;
 align-items: center;
 justify-content: center;
+width: 44px;
+height: 44px;
+border-radius: 50%;
 }
 .team-icon{
   fill: #AFB1B8;
